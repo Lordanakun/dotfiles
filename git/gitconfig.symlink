@@ -1,11 +1,17 @@
 [user]
-	name = Chris Kau
-	email = chris.b.kau@gmail.com
+	name = Kun Bai
+	email = kunbai@us.ibm.com
 [core]
     editor = vim
+	excludesfile = /Users/LordAnakun/.gitignore_global
 [color]
 	pager = true
 	ui = auto
+[color "status"]
+    added = green
+    changed = blue
+    untracked = magenta
+    deleted = red
 [alias]
 	br = branch
 	ca = commit --amend
@@ -68,3 +74,9 @@
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
 	required = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Users/LordAnakun/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

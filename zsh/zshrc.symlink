@@ -15,8 +15,16 @@ fi
 autoload -U compinit
 compinit
 
+#zsh zle bindkey -v
+bindkey -v
+
 # load every completion after autocomplete loads
 for config_file ($ZSH/**/completion.sh) source $config_file
 
 # initialise fasd
 eval "$(fasd --init auto)"
+
+# export customized path
+export PATH=/usr/local/bin:/usr/local/mysql/bin:/Users/LordAnakun/Development/WatsonHealthCloud/workingspace/researchcloud-v1/localconfig-DO-NOT-CHECK-IN:$PATH
+export JAVA_HOME=$(/usr/libexec/java_home)
+export project_loc=/Users/LordAnakun/Development/WatsonHealthCloud/workingspace

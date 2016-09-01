@@ -13,6 +13,12 @@ alias -s log="less -MN"
 alias -s db="open -a /Applications/Base.app/Contents/MacOS/Base"
 alias -s md="open -a '/Applications/iA Writer.app/Contents/MacOS/iA Writer'"
 
+# command for Mou
+alias mou="open -a Mou"
+
+# command for mysql
+alias mysqls="mysql -u superman-wh -p"
+
 # general aliases
 alias ax="axel -a"
 alias am="open -a 'Activity Monitor'"

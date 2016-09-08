@@ -28,7 +28,12 @@ eval "$(fasd --init auto)"
 
 # export customized path
 export PATH=/usr/local/bin:/usr/local/mysql/bin:/Users/LordAnakun/Development/WatsonHealthCloud/workingspace/researchcloud-v1/localconfig-DO-NOT-CHECK-IN:$PATH
-export JAVA_HOME=$(/usr/libexec/java_home)
+
+#Apple Java Home
+#export JAVA_HOME=$(/usr/libexec/java_home)
+#IBM Java Home
+export JAVA_HOME=/Users/LordAnakun/Development/WatsonHealthCloud/IBM_java_sdk/
+
 export project_loc=/Users/LordAnakun/Development/WatsonHealthCloud/workingspace
 #source /Users/LordAnakun/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
